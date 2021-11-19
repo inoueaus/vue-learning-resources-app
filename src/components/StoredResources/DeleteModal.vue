@@ -2,8 +2,8 @@
   <BaseModal @close-modal="onCloseClick">
     <h2>Are you sure you want to delete {{ title }}?</h2>
     <div>
-      <BaseButton @button-clicked="onYesClick">Yes</BaseButton>
-      <BaseButton @button-clicked="onCloseClick">No</BaseButton>
+      <BaseButton @click="onYesClick">Yes</BaseButton>
+      <BaseButton @click="onCloseClick">No</BaseButton>
     </div>
   </BaseModal>
 </template>

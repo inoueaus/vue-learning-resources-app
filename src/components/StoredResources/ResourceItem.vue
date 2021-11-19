@@ -10,7 +10,7 @@
       ></DeleteModal>
       <div class="title-box">
         <h3>{{ title }}</h3>
-        <BaseButton @button-clicked="onDeleteClick">Delete</BaseButton>
+        <BaseButton @click="onDeleteClick">Delete</BaseButton>
       </div>
       <p>{{ description }}</p>
       <a :href="link">View Resource</a>
