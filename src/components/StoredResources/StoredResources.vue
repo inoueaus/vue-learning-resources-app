@@ -48,14 +48,6 @@ export default defineComponent({
       return filteredData;
     });
 
-    watch(pageCount, () => {
-      console.log(pageCount.value);
-    });
-
-    watch(displayData, () => {
-      console.log(displayData.value);
-    });
-
     const changePage = (pageNo: number) => {
       currentPage.value = pageNo;
     }

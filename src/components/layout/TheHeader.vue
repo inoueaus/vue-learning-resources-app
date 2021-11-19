@@ -75,12 +75,12 @@ li:hover {
   border-color: rgb(224, 218, 131);
 }
 .active {
-  background-color: rgb(95, 92, 54);
-  border-color: rgb(95, 92, 54);
+  background-color: grey;
+  border-color: grey;
   cursor: default;
 }
 .active:hover {
-  background-color: rgb(95, 92, 54);
-  border-color: rgb(95, 92, 54);
+  background-color: grey;
+  border-color: grey;
 }
 </style>

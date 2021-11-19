@@ -53,7 +53,6 @@ button {
   border: 1px solid darkkhaki;
   padding: 0.5rem;
   cursor: pointer;
-  transition: all 0.3s;
 }
 
 button:hover {
