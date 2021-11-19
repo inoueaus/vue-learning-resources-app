@@ -73,6 +73,7 @@ button:hover {
 .disabled {
   background-color: grey;
   border-color: grey;
+  color: white;
   cursor: default;
 }
 .disabled:hover {
