@@ -45,6 +45,12 @@ export default defineComponent({
     const descriptionError = ref(false);
     const linkError = ref(false);
 
+    const resetErrors = () => {
+      titleError.value = false;
+      descriptionError.value = false;
+      linkError.value = false;
+    };
+
     const onAddResource = (event: Event) => {
       event.preventDefault();
 
@@ -52,11 +58,10 @@ export default defineComponent({
       const description = descriptionRef.value!.value.trim();
       const link = linkRef.value!.value.trim();
 
+      resetErrors();
+
       if (title && description && link) {
         context.emit("add-new", title, description, link);
-        titleError.value = false;
-        descriptionError.value = false;
-        linkError.value = false;
         titleRef.value!.value = "";
         descriptionRef.value!.value = "";
         linkRef.value!.value = "";
