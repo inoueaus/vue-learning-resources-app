@@ -1,13 +1,14 @@
-import {initializeApp} from "firebase/app";
+import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA2N_OZxB35l5yQFThuYTno4OgOBJQWZRw",
-  authDomain: "react-studies-742e1.firebaseapp.com",
-  databaseURL: "https://react-studies-742e1-default-rtdb.firebaseio.com",
-  projectId: "react-studies-742e1",
-  storageBucket: "react-studies-742e1.appspot.com",
-  messagingSenderId: "375802689568",
-  appId: "1:375802689568:web:ee6f434de69b526b516445"
+  apiKey: "AIzaSyDV0sCx3ZeF2t_gHiax-kSg6ml-1J1JDIs",
+  authDomain: "vue-learning-resources-app.firebaseapp.com",
+  databaseURL:
+    "https://vue-learning-resources-app-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "vue-learning-resources-app",
+  storageBucket: "vue-learning-resources-app.appspot.com",
+  messagingSenderId: "425825885698",
+  appId: "1:425825885698:web:8129eee9086ab36a19911b",
 };
 
 const firebaseApp = initializeApp(firebaseConfig);

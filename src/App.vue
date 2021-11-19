@@ -25,7 +25,7 @@ export default defineComponent({
   components: { TheHeader, StoredResources, AddResource },
   setup() {
     const mode = ref<string>("RESOURCES");
-    const fbData = ref<{ [name: string]: FirebaseResource } | null>(null);
+    const fbData = ref<{ [name: string]: FirebaseResource }>({});
     const loading = ref(true);
 
     onMounted(() => {
@@ -101,6 +101,9 @@ body {
   padding: 0 1rem 0 1rem;
   width: 30%;
   margin: 2rem auto 0 auto;
+}
+
+.loading p {
   animation: pulsate 0.5s linear infinite;
 }
 
