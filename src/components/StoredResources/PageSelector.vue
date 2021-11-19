@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button :class="`left ${currentPage === 1 && 'disabled'}`" @click="prevClick">Prev</button>
+    <button :class="`left ${currentPage === 1 && 'disabled-end'}`" @click="prevClick">Prev</button>
     <button
       v-for="pageNo in pageCount"
       :class="currentPage === pageNo && 'disabled'"
@@ -9,7 +9,7 @@
     >
       {{ pageNo }}
     </button>
-    <button :class="`right ${currentPage === pageCount && 'disabled'}`" @click="nextClick">Next</button>
+    <button :class="`right ${currentPage === pageCount && 'disabled-end'}`" @click="nextClick">Next</button>
   </div>
 </template>
 
@@ -78,6 +78,16 @@ button:hover {
 }
 .disabled:hover {
   background-color: grey;
+  border-color: grey;
+}
+.disabled-end {
+  background-color: rgba(128, 128, 128, 0);
+  border-color: grey;
+  color: black;
+  cursor: default;
+}
+.disabled-end:hover {
+  background-color: rgba(128, 128, 128, 0);
   border-color: grey;
 }
 </style>
