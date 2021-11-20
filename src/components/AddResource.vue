@@ -1,27 +1,33 @@
 <template>
   <BaseCard>
     <form class="form" @submit="onAddResource">
-      <label for="title">Title</label>
-      <input
-        name="title"
-        type="text"
-        ref="titleRef"
-        :class="titleError && 'invalid'"
-      />
-      <label for="description">Description</label>
-      <input
-        name="description"
-        type="text"
-        ref="descriptionRef"
-        :class="descriptionError && 'invalid'"
-      />
-      <label for="link">Link</label>
-      <input
-        name="link"
-        type="text"
-        ref="linkRef"
-        :class="linkError && 'invalid'"
-      />
+      <div class="form-control">
+        <label for="title">Title</label>
+        <input
+          name="title"
+          type="text"
+          ref="titleRef"
+          :class="titleError && 'invalid'"
+        />
+      </div>
+      <div class="form-control">
+        <label for="description">Description</label>
+        <input
+          name="description"
+          type="text"
+          ref="descriptionRef"
+          :class="descriptionError && 'invalid'"
+        />
+      </div>
+      <div class="form-control">
+        <label for="link">Link</label>
+        <input
+          name="link"
+          type="text"
+          ref="linkRef"
+          :class="linkError && 'invalid'"
+        />
+      </div>
       <BaseButton type="submit">Submit</BaseButton>
     </form>
   </BaseCard>
@@ -94,11 +100,19 @@ export default defineComponent({
 .form {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-control label {
   text-align: left;
 }
 
-.form input {
-  margin-bottom: 1rem;
+.form-control input {
   height: 35px;
   outline: none;
   border: 1px solid grey;
